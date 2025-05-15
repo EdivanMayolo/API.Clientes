@@ -8,13 +8,13 @@ namespace ApiClientes.Service.Parses
         public static TbEndereco ToTbEndereco(CriarEnderecoDTO dto)
         {
             TbEndereco novoEndereco = new();
-            novoEndereco.Cep = int.Parse(dto.cep);
+            novoEndereco.Cep = dto.cep;
             novoEndereco.Logradouro = dto.logradouro;
             novoEndereco.Numero = dto.numero;
             novoEndereco.Bairro = dto.bairro;
             novoEndereco.Cidade = dto.cidade;
             novoEndereco.Uf = dto.uf;
-            novoEndereco.Status = int.Parse(dto.status);
+            novoEndereco.Status = dto.status;
             return novoEndereco;
         }
         public static EnderecoDTO ToEnderecoDTO(TbEndereco tbEndereco)

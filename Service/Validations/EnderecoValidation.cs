@@ -7,7 +7,7 @@ namespace ApiClientes.Service.Validations
     {
         public static void ValidarEndereco(CriarEnderecoDTO criarEnderecoDTO)
         {
-            if (string.IsNullOrEmpty(criarEnderecoDTO.cep))
+            if (int.IsNegative(criarEnderecoDTO.cep))
                 throw new BadRequestException("O campo 'cep' é obrigatório.");
             if (string.IsNullOrEmpty(criarEnderecoDTO.logradouro))
                 throw new BadRequestException("O campo 'logradouro' é obrigatório.");

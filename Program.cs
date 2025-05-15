@@ -21,6 +21,7 @@ namespace ApiClientes
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ClientesContext>();
             builder.Services.AddScoped<ClientesService>();
+            builder.Services.AddScoped<EnderecoService>();
 
             var app = builder.Build();
 

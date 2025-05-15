@@ -3,13 +3,13 @@
    
         public class CriarEnderecoDTO
         {
-            public string cep { get; set; }
+            public int cep { get; set; }
             public string logradouro { get; set; }
             public string numero { get; set; }
             public string bairro { get; set; }
             public string cidade { get; set; }
             public string uf { get; set; }
-            public string status { get; set; }
+            public int status { get; set; }
 
         }
         public class EnderecoDTO
