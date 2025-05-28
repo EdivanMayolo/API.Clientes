@@ -14,7 +14,7 @@ namespace ApiClientes.Service.Parses
             novoCliente.Telefone = dto.Telefone;
             novoCliente.Documento = dto.Documento;
             novoCliente.Tipodoc = dto.Tipodoc;
-            novoCliente.Criadoem = DateTime.Now;
+            novoCliente.Criadoem = DateTime.Now.ToUniversalTime();
             novoCliente.Alteradoem = novoCliente.Criadoem;
 
             return novoCliente;

@@ -1,11 +1,13 @@
 
 using ApiClientes.Database.Models;
 using ApiClientes.Service;
+using ApiClientes.Database.Models;
+using ApiClientes.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ApiClientes
+namespace clientes
 {
     public class Program
     {
